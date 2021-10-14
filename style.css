@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    font-family: 'Zilla Slab', serif;
+}
+
+.hea {
+    margin: 20px;
+    text-align: center;
+}
+
+.hea a {
+    font-size: 20px;
+}
+
+.hea a::after {
+    content: "|";
+    margin: 0 30px;
+    pointer-events: none;
+}
+
+.hea a:nth-last-child(1)::after {
+    display: none;
+}
+
+.con {
+    width: 900px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.box {
+    margin-bottom: 30px;
+}
+
+.box h2 {
+    font-size: 27px;
+}
+
+.box p {
+    font-size: 20px;
+}
+
+.box a {
+    display: block;
+    text-align: center;
+}
+
+.inp {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inp input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.inp textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.inp input[type="submit"]  {
+    border: none;
+    outline: none;
+    align-items: center;
+    display: block;
+    padding: 8px 10px;
+    float: right;
+}
+
+
+@media (max-width: 800px) {
+    .hea {
+        margin: 30px;
+    }
+    
+    .con {
+        width: 90%;
+        margin-top: 50px;
+    }
+    
+    .box p {
+        font-size: 18px;
+    }
+
+    .hea a {
+        display: none;
+    }
+
+    .hea a::after {
+        margin-right: 0 20px;
+    }
+    
+    .hea a:nth-last-child(3)::after {
+        display: none;
+    }
+
+    .hea a:nth-child(1), .hea a:nth-child(2) {
+        display: inline-block;
+    }
+
+    .box a {
+        text-align: right;
+    }
+
+    .inp {
+        width: 80%;
+    }
+
+}
